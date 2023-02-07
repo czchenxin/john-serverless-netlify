@@ -7,6 +7,6 @@ exports.handler = async (event, context, cb) => {
   
   return {
     statusCode: 200,
-    body: 'firjdkjkdfound',
+    body: 'this text is from server',
   }
 }
