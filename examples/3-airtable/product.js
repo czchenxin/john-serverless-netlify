@@ -7,10 +7,14 @@ const fetchProduct = async () => {
     const id = window.location.search
     // const {
     //   data: { fields },
+      
     // } = await axios.get(`/api/3-product${id}`)
-    const {
+     const {
       data: { fields },
+      
     } = await axios.get(`/api/3-z-complete${id}`)
+
+ 
     const { name, desc, price, image } = fields
     result.innerHTML = `<h1 class="title">${name}</h1>
   <article class="product">
@@ -25,7 +29,7 @@ const fetchProduct = async () => {
     </div>
   </article>`
   } catch (error) {
-    result.innerHTML = `<h2>${error.response.data}</h2>`
+    result.innerHTML = `<h2>"ok"</h2>`
   }
 }
 
